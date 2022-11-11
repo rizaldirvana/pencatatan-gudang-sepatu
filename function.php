@@ -1,5 +1,5 @@
 <?php
-$db = new SQLite3($_SERVER['DOCUMENT_ROOT']."gudang sepatu.db");
+$db = new SQLite3($_SERVER['DOCUMENT_ROOT']."/gudang sepatu.db");
 date_default_timezone_set("Asia/Jakarta");
 function getData($data){
     global $db;
