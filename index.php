@@ -8,7 +8,6 @@ if (isset($_SESSION['login'])) {
   }
 }
 require 'function.php';
-
 if(isset($_POST['submit'])){
   $user = strtolower($_POST['username']);
   $pass = base64_encode($_POST['password']);
