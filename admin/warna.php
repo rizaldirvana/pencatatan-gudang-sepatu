@@ -107,7 +107,7 @@ $data = getData("SELECT * FROM WARNA ORDER BY ID_WARNA");
 			            <td><?= $row['NAMA_WARNA'] ?></td>
 			            <td>
 			              	<a href="editWarna.php?id_warna=<?= $row['ID_WARNA'] ?>" title="Sunting Data"><img alt="Sunting Data" src="../assets/img/edit3-icon.svg" width="25px" height="25px"></img></a>
-			              	<a href="deleteWarna.php?id_warna=<?= $row['ID_WARNA'] ?>" onClick="return confirm('Hapus Data Kategori ini?')" title="Hapus Data"><img alt="Hapus Data" src="../assets/img/delete2-icon.svg" width="25px" height="25px" class="ms-2"></img></a>
+			              	<a href="deleteWarna.php?id_warna=<?= $row['ID_WARNA'] ?>" onClick="return confirm('Hapus Data Warna ini?')" title="Hapus Data"><img alt="Hapus Data" src="../assets/img/delete2-icon.svg" width="25px" height="25px" class="ms-2"></img></a>
 			            </td>
 		            </tr>
 					<?php $i++ ?>

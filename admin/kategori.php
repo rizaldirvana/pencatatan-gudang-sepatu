@@ -88,7 +88,7 @@ $data = getData("SELECT * FROM KATEGORI ORDER BY ID_KATEGORI");
 	    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5">
 	      	<h1 class="h2 my-5">Daftar Kategori</h1>
 
-	      	<a href="tambahkategori.php" class="mx-5"><button class="btn btn-warning ">
+	      	<a href="tambahKategori.php" class="mx-5"><button class="btn btn-warning ">
 	      		<img src="../assets/img/add-icon.svg" width="25px" height="25px" class="me-2"> Tambah Kategori</button>
 	  		</a>
 	      	<div class="table-responsive mx-5 mt-3">

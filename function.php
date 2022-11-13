@@ -293,9 +293,9 @@ function editWarna($data){
 
 function deleteWarna($id_warna){
     global $db;
-    $query = "DELETE FROM WARNA WHERE ID_WARNA = '$id_warna'";
-    $db->exec($query);
     $query = "DELETE FROM WARNA_BARANG WHERE ID_WARNA = '$id_warna'";
+    $db->exec($query);
+    $query = "DELETE FROM WARNA WHERE ID_WARNA = '$id_warna'";
     $db->exec($query);
     return $db->changes();
 }
