@@ -125,13 +125,11 @@ function editMerk($data){
     }
 
     try {
-        
-
+        // $query = "UPDATE BARANG SET ID_MERK = '$id_new' WHERE ID_MERK = '$id_merk'";
+        // $db->exec($query);
+        // $query = "UPDATE PENGIRIM_MERK SET ID_MERK = '$id_new' WHERE ID_MERK = '$id_merk'";
+        // $db->exec($query);
         $query = "UPDATE MERK SET ID_MERK = '$id_new', NAMA_MERK = '$nama', ID_KOTA = '$id_kota', NOTELP_MERK = '$notelp', EMAIL_MERK = '$email' WHERE ID_MERK = '$id_merk'";
-        $db->exec($query);
-        $query = "UPDATE BARANG SET ID_MERK = '$id_new' WHERE ID_MERK = '$id_merk'";
-        $db->exec($query);
-        $query = "UPDATE PENGIRIM_MERK SET ID_MERK = '$id_new' WHERE ID_MERK = '$id_merk'";
         $db->exec($query);
     } catch (Exception $e) {
         return 0;
@@ -143,9 +141,9 @@ function editMerk($data){
 
 function deleteMerk($id_merk){
     global $db;
-    $query = "DELETE FROM MERK WHERE ID_MERK = '$id_merk'";
-    $db->exec($query);
     $query = "DELETE FROM PENGIRIM_MERK WHERE ID_MERK = '$id_merk'";
+    $db->exec($query);
+    $query = "DELETE FROM MERK WHERE ID_MERK = '$id_merk'";
     $db->exec($query);
     return $db->changes();
 }
@@ -205,10 +203,10 @@ function editPengirim($data){
 
         $query = "UPDATE PENGIRIM SET ID_PENGIRIM = '$id_new', NAMA_PENGIRIM = '$nama', ID_KOTA = '$id_kota', NOTELP_CP = '$notelpcp', NAMA_CP = '$namacp', EMAIL_PENGIRIM = '$email' WHERE ID_PENGIRIM = '$id_pengirim'";
         $db->exec($query);
-        $query = "UPDATE PENGIRIM_MERK SET ID_PENGIRIM = '$id_new' WHERE ID_PENGIRIM = '$id_pengirim'";
-        $db->exec($query);
-        $query = "UPDATE FAKTUR SET ID_PENGIRIM = '$id_new' WHERE ID_PENGIRIM = '$id_pengirim'";
-        $db->exec($query);
+        // $query = "UPDATE PENGIRIM_MERK SET ID_PENGIRIM = '$id_new' WHERE ID_PENGIRIM = '$id_pengirim'";
+        // $db->exec($query);
+        // $query = "UPDATE FAKTUR SET ID_PENGIRIM = '$id_new' WHERE ID_PENGIRIM = '$id_pengirim'";
+        // $db->exec($query);
 
         foreach ($delMerk as $key) {
             $query = "DELETE FROM PENGIRIM_MERK WHERE ID_MERK = '$key' AND ID_PENGIRIM = 'id_pengirim'";

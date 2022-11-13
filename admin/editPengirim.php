@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
 	      </div>
 	    </nav>
 	    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
-	      	<h1 class="h2 my-5">Tambah Pengirim</h1>
+	      	<h1 class="h2 my-5">Sunting Pengirim</h1>
 	      	<div class="container w-75 py-3">
 	      		<form method="POST" action="">
                     <input type="hidden" value="<?php echo $id_pengirim ?>" name="id_pengirim">

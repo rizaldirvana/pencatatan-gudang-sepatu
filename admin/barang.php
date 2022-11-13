@@ -128,7 +128,7 @@ $data = getData($query);
 					<table class="table">
 						<tr>
 							<td>
-								<a href="tambahbarang.php"><button class="btn btn-warning ">
+								<a href="tambahBarang.php"><button class="btn btn-warning ">
 									<img src="../assets/img/add-icon.svg" width="25px" height="25px" class="me-2"> Tambah Barang</button>
 								</a>
 							</td>
