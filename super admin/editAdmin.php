@@ -44,7 +44,7 @@ if (isset($_POST['reset'])){
 </head>
 <body>
 <header class="navbar fixed-top bg-warning flex-md-nowrap shadow-lg py-2">
-		<p class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-3 text-dark fw-bold my-auto ms-5">Halaman Admin</p>      			
+		<p class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-3 text-dark fw-bold my-auto ms-5">Halaman Super Admin</p>      			
   		<div class="nav">
     		<span class="nav-item text-nowrap my-auto fs-5">Selamat Datang, <b><?php echo $_SESSION['username'] ?>!</b></span>
     		<div class="nav-item text-nowrap">
