@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 		} else {
 			echo "<script>alert('Gagal Mengubah Password')</script>";
 		}
-    } else {
+    } else { 
 		echo "<script>alert('Password Lama Salah')</script>";
     }
 }

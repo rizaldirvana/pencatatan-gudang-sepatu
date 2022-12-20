@@ -91,8 +91,8 @@ if (isset($_POST['submit'])) {
 						<input type="text" class="form-control" id="notelp" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Nomor Telepon" name="notelp" id="notelp">
 					</div>
 			      	<div class="mb-3">
-						<label for="username" class="form-label">Username Baru</label>
-						<input type="text" name="username" class="form-control" id="username" placeholder="Masukkan Username Baru Admin" required oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g, '').replace(/(\..*)\./g, '$1');">
+						<label for="username" class="form-label">Username</label>
+						<input type="text" name="username" class="form-control" id="username" placeholder="Masukkan Username Admin" required oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g, '').replace(/(\..*)\./g, '$1');">
 					</div>
 			      	<!-- <div class="mb-3">
 						<label for="password" class="form-label">Password Baru</label>

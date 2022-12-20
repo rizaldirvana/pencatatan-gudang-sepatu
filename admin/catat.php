@@ -7,6 +7,9 @@ if(!sessionLoginCheck('LVL002')){
 };
 $id_pengirim = $_SESSION['tempPengirim'];
 
+$nama_pengirim = getData("SELECT NAMA_PENGIRIM FROM PENGIRIM WHERE ID_PENGIRIM = '$id_pengirim'");
+// var_dump($nama_pengirim);
+
 $daftar_merk = getData("SELECT MERK.ID_MERK, MERK.NAMA_MERK FROM MERK INNER JOIN PENGIRIM_MERK WHERE MERK.ID_MERK = PENGIRIM_MERK.ID_MERK AND PENGIRIM_MERK.ID_PENGIRIM = '$id_pengirim'");
 
 $data_temp = $_SESSION['tempCatat'];
@@ -116,7 +119,7 @@ if (isset($_POST['submit'])) {
 
 	    <!-- Menu -->
 	    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5">
-	      	<h1 class="h2 my-5 mx-5">Catat Detail Barang</h1>
+	      	<h1 class="h2 my-5 mx-5">Catat Detail Barang, <?php echo $nama_pengirim[0][0] ?></h1>
             <table class="table table-sm ms-5">
                 <tr>
                     <form action="" method="post">
